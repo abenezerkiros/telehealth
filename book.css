@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f5fbf5;
+    color: #2d2d2d;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 5%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .logo img {
+    height: 62px;
+    margin-right: 8px;
+  }
+  
+  nav a {
+    margin-left: 24px;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  .booking {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .booking h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  
+  .container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  
+  .container p {
+    color: #555;
+    margin-bottom: 32px;
+  }
+  
+  .booking-grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .service-select, .calendar {
+    flex: 1 1 300px;
+    text-align: left;
+  }
+  
+  .service-select h4,
+  .calendar h4,
+  .time-select h4 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+  
+  .option {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 14px 18px;
+    border: 2px solid #d5e6d5;
+    border-radius: 12px;
+    background: #fff;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .option.active {
+    background: #eef8ee;
+    border-color: #2f593c;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .calendar-grid div {
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .calendar-grid .selected {
+    background: #2f593c;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .time-select {
+    margin-bottom: 32px;
+    text-align: left;
+  }
+  
+  .times {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  
+  .time {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .time.active {
+    background: #eef8ee;
+    border-color: #2f593c;
+  }
+  
+  .confirm {
+    background: #2f593c;
+    color: white;
+    font-size: 1.2rem;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .site-footer {
+    background: #2f593c;
+    color: #ffffff;
+    padding: 40px 5%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .footer-brand img {
+    height: 30px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+    

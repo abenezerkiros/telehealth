@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f3f9f3;
+    color: #2d2d2d;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 5%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .logo img {
+    height: 62px;
+    margin-right: 8px;
+  }
+  
+  nav a {
+    margin-left: 24px;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .contact-page {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .contact-page h2 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .contact-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  }
+  
+  .contact-form {
+    flex: 1 1 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    background-color: #7ba67f;
+    color: white;
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-info {
+    flex: 1 1 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .faq-box, .hours-box {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    background: #fff;
+    text-align: left;
+  }
+  
+  .faq-box h4, .hours-box h4 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+  
+  .faq-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .faq-box li {
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+    font-size: 0.95rem;
+  }
+  
+  .faq-box li span {
+    font-style: italic;
+  }
+  
+  .hours-box p {
+    margin: 0 0 12px;
+    font-size: 0.95rem;
+  }
+  .site-footer {
+    background: #2f593c;
+    color: #ffffff;
+    padding: 40px 5%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .footer-brand img {
+    height: 30px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+    
