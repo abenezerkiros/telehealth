@@ -27,7 +27,7 @@ body {
   }
   
   .logo img {
-    height: 62px;
+    height: 82px;
     margin-right: 8px;
   }
   
@@ -174,4 +174,11 @@ body {
   .footer-links a:hover {
     text-decoration: underline;
   }
-    
+  .btn {
+    background-color: #2f593c;
+    color: #fff;
+    padding: 14px 24px;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: bold;
+  } 

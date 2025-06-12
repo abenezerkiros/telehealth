@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ - Healthy Highways</title>
+  <link rel="stylesheet" href="faq.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="index.html"> 
+          <img src="healthy_highway_logo.png" alt="Healthy Highway Logo" />
+    
+        </a>
+        <nav>
+          <a href="about.html">ABOUT</a>
+          <a href="pricing.html">PRICING</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="book.html" class="btn">BOOK AN APPOINTMENT</a>
+        </nav>
+      </header>
+<section class="faq-page">
+  <div class="container faq-layout">
+
+    <!-- Left Side: Why Choose Us -->
+    <div class="why-choose">
+      <h2>Why Choose Healthy Highways?</h2>
+      <p>Because getting the care you need shouldn’t be stressful. Whether you’re feeling under the weather or just want to stay on top of your health, we’re here — with options that work around your life.</p>
+      <ul>
+        <li>You’re cared for by a licensed provider with experience in both everyday health and complex wound care.</li>
+        <li>Appointments are easy to book — and available virtually or in person.</li>
+        <li>Your visits are focused, thorough, and tailored to what you actually need.</li>
+      </ul>
+      <p>At Healthy Highways, we’re not a chain or a clinic you’ll never remember. We’re your neighbor — part of your community — and we’re here to walk this road with you.</p>
+      <p class="phone-call">
+        Let’s talk about your care needs. <br />
+        <span class="phone">  <i class="fas fa-phone"></i> (410) 334-2929</span>
+      </p>
+    </div>
+
+    <!-- Right Side: FAQs -->
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <button class="faq-question">What is telehealth?</button>
+        <div class="faq-answer">Telehealth allows you to consult with a licensed provider remotely using your phone, tablet, or computer — no waiting rooms required.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do you accept insurance?</button>
+        <div class="faq-answer">Yes. We accept Medicaid, Medicare, and most private insurance plans for covered services like primary care and wound care.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What if I don’t have insurance?</button>
+        <div class="faq-answer">We offer simple self-pay care packages that include virtual or in-person visits, wellness tracking, and more.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I book a same-day appointment?</button>
+        <div class="faq-answer">Yes, based on availability. Same-day appointments are often available, especially for sick visits.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="healthy_highway_logo.png" alt="Logo" />
+        <p>© 2025 Healthy Highway LLC. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  // Simple accordion
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      button.classList.toggle('active');
+      const answer = button.nextElementSibling;
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+</body>
+</html>

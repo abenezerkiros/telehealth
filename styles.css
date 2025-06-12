@@ -27,7 +27,7 @@ a {
 }
 
 .logo img {
-  height: 62px;
+  height: 82px;
   margin-right: 8px;
 }
 
@@ -40,8 +40,8 @@ nav a {
 .hero {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 5% 20%;
+
+  padding: 5% 5%;
   background: #f9f9f9;
   flex-wrap: wrap;
 }
@@ -255,4 +255,53 @@ nav a {
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+.why-choose {
+  background: #f5fbf5;
+  padding: 60px 20px;
+  color: #2d2d2d;
+  text-align: left;
+}
+
+.why-choose h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.why-choose .intro,
+.why-choose .closing {
+  max-width: 800px;
+  margin: 0 auto 24px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.benefits {
+  max-width: 800px;
+  margin: 0 auto 32px;
+  padding-left: 20px;
+  list-style-type: disc;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contact-call {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+.phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  color: #2f593c;
+  margin-top: 8px;
+}
+
+.phone img {
+  width: 18px;
+  height: 18px;
 }

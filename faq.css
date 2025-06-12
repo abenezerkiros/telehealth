@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: "Segoe UI", sans-serif;
+    background: #f5fbf5;
     color: #2d2d2d;
-    background: #fefefe;
   }
   a {
     text-decoration: none;
@@ -35,90 +35,94 @@ body {
     font-size: 0.95rem;
     font-weight: 500;
   }
-  
   .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 60px 20px;
   }
   
-  .about {
-    padding: 60px 0;
-    background: #f5fbf5;
-    text-align: center;
-  }
-  
-  .about h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-  }
-  
-  .about-content {
+  .faq-layout {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
     flex-wrap: wrap;
-    margin-bottom: 60px;
-    text-align: left;
+    gap: 40px;
+    justify-content: space-between;
   }
   
-  .provider-photo img {
+  .why-choose {
+    flex: 1 1 480px;
+    background: #fff;
+    padding: 30px;
     border-radius: 16px;
-    width: 260px;
-    height: auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   }
   
-  .provider-info {
-    max-width: 500px;
-  }
-  
-  .provider-info h3 {
-    color: #23442f;
-    font-size: 1.3rem;
-    margin-bottom: 12px;
-  }
-  
-  .provider-info p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  .why-choose h3 {
+  .why-choose h2 {
     font-size: 1.5rem;
-    margin-bottom: 32px;
-    color: #23442f;
+    margin-bottom: 20px;
   }
   
-  .reasons {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;         /* ← centers the items horizontally */
-    justify-content: center;
-    text-align: left;
+  .why-choose ul {
+    padding-left: 20px;
+    margin-bottom: 16px;
   }
   
-  .reason {
-    display: flex;
-    gap: 16px;
+  .why-choose li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+  }
+  
+  .phone-call {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .phone {
+    display: inline-flex;
     align-items: center;
-  }
-  
-  .reason img {
-    height: 36px;
-    flex-shrink: 0;
-  }
-  
-  .reason strong {
-    display: block;
-    margin-bottom: 4px;
+    gap: 6px;
     color: #2f593c;
   }
   
-  .reason p {
-    margin: 0;
+  .phone img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .faq-section {
+    flex: 1 1 480px;
+  }
+  
+  .faq-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .faq-item {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .faq-question {
+    background: none;
+    border: none;
     font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    padding: 12px 0;
+    cursor: pointer;
+    color: #2f593c;
+  }
+  
+  .faq-question.active {
+    color: #1f3d29;
+  }
+  
+  .faq-answer {
+    display: none;
+    font-size: 0.95rem;
+    padding: 0 0 10px;
     color: #444;
   }
   .site-footer {
