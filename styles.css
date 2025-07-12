@@ -354,3 +354,134 @@ nav a {
   width: 18px;
   height: 18px;
 }
+.hh-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.5;
+  color: #111;
+}
+
+/* Top two-column intro */
+.hh-top-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  margin-bottom: 64px;
+}
+
+.hh-photo {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.hh-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hh-copy h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.hh-copy .subhead {
+  font-style: italic;
+  font-size: 18px;
+  margin: 0 0 24px;
+  color: #444;
+}
+
+.hh-copy p {
+  margin: 0 0 16px;
+}
+
+/* Bottom grid split */
+.hh-bottom-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+
+
+.hh-simple-hd {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+}
+
+.hh-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+
+.card {
+
+  width: 25%;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+}
+
+
+.card .icon {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.card p {
+  font-size: 15px;
+  margin: 0;
+}
+
+.hh-cta {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+.hh-cta .phone {
+  font-weight: 700;
+}
+
+/* Lower image override */
+.hh-photo.lower {
+  margin: 0;
+  max-width: 100%;
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .hh-top-grid,
+  .hh-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hh-simple-hd {
+    text-align: center;
+  }
+
+  .hh-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hh-cta {
+    text-align: center;
+  }
+}
+
+
+
