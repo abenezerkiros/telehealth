@@ -3,99 +3,213 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pricing - Healthy Highways</title>
-  <link rel="stylesheet" href="pricing.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Simple, Honest Pricing</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f0f7f0;
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      color: #333;
+    }
+    .body{
+      width: 70%;
+      margin: auto;
+
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 0px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    .highlight {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .highlight2 {
+      background-color: #fff;
+      padding: 20px;
+      width: 40%;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .highlight1 {
+
+      margin-right: 20px;
+      width: 50%;
+      padding-top: 0;
+  
+
+    
+    }
+    .flex{
+      display: flex;
+    }
+    ul {
+      padding-left: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      background-color: #fff;
+    }
+    th {
+      background-color: #f3f3f3;
+    }
+    .icon {
+      margin-right: 6px;
+    }
+    .note {
+      font-size: 0.95rem;
+      color: #444;
+      margin-top: 10px;
+    }
+    .heart {
+      color: red;
+    }
+    p{
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      h1, h2 {
+        font-size: 1.4rem;
+      }
+      table, th, td {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header class="navbar">
-        <a class="logo" href="index.html"> 
-          <img src="healthy_highway_logo.png" alt="Healthy Highway Logo" />
-    
-        </a>
-        <nav>
-            <a href="index.html">HOME</a>
-          <a href="about.html">ABOUT</a>
-          <a href="pricing.html">PRICING</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">CONTACT</a>
-          <a href="book.html" class="btn">BOOK AN APPOINTMENT</a>
-        </nav>
-      </header>
-  <section class="pricing-page">
-    <div class="container">
-      <h1>Care Packages That Work With or Without Insurance</h1>
-      <p class="subheadline">
-        Whether you’re uninsured, self-pay, or have Medicaid, Medicare, or private insurance — we’ll help you get the care you need without the confusion.
-      </p>
+  <header class="navbar">
+    <a class="logo" href="index.html"> 
+      <img src="healthy_highway_logo.png" alt="Healthy Highway Logo" />
 
-      <h2>Healthy Highways Care Packages <span>(For self-pay or uncovered services)</span></h2>
+    </a>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="service.html">SERVICES</a>
+      <a href="pricing.html">PRICING</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="book.html" class="btn">BOOK APPOINTMENT</a>
+    </nav>
+  </header>
+<div class="body">
 
-      <div class="pricing-cards">
-        <div class="card">
-          <h3>Basic Plan</h3>
-          <p class="tagline">Just the essentials</p>
-          <ul>
-            <li>1 virtual visit per month</li>
-            <li>Same-day sick visit access (as available)</li>
-            <li>Message follow-up</li>
-          </ul>
-          <div class="price">$80<span>/month</span></div>
-        </div>
-
-        <div class="card">
-          <h3>Plus Plan</h3>
-          <p class="tagline">More support when you need it</p>
-          <ul>
-            <li>1 in-person or virtual visit/month</li>
-            <li>Priority scheduling</li>
-            <li>Preventive care guidance</li>
-          </ul>
-          <div class="price">$100<span>/month</span></div>
-        </div>
-
-        <div class="card">
-          <h3>Premium Plan</h3>
-          <p class="tagline">Our most comprehensive option</p>
-          <ul>
-            <li>2 visits/month (in-person or virtual)</li>
-            <li>Photo-based wound monitoring</li>
-            <li>Ongoing wellness tracking</li>
-          </ul>
-          <div class="price">$150<span>/month</span></div>
-        </div>
-      </div>
-
-      <div class="insurance-note">
-        <p>We accept Medicaid, Medicare, and most private insurance for covered services like primary care visits and wound care.</p>
-        <p>Our care packages are designed for:</p>
-        <ul>
-          <li>Patients without insurance</li>
-          <li>Those with limited coverage</li>
-          <li>Those who want additional support or more consistent access</li>
-        </ul>
-      </div>
-
-      <div class="contact-help">
-        <p><strong>Still Not Sure What’s Covered?</strong></p>
-        <p>Let’s talk it through. <br />Call us at <span class="phone"><i class="fas fa-phone"></i> (410) 344-7878</span></p>
-      </div>
-    </div>
-
+  <section>
+    <h1>📅 Simple, Honest Pricing for Your Health</h1>
+    <p>At our practice, we believe quality healthcare should be clear, affordable, and personal — no surprise bills, no insurance middlemen, just care that puts you first.</p>
   </section>
-  <footer class="site-footer">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <img src="healthy_highway_logo.png" alt="Logo" />
-        <p>© 2025 Healthy Highway. All rights reserved.</p>
-      </div>
-      <div class="footer-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Contact</a>
-      </div>
+ <div class="flex">
+  <section class="highlight1">
+    <h2>🔒 One Flat Monthly Fee — That’s It.</h2>
+    <p>We offer a membership-based model that gives you unlimited access to your provider, longer visits, and same or next-day appointments – all for one simple monthly price.</p>
+    <h2>🌀 Why Membership?</h2>
+    <p style="text-align: left;">Think of it like a health gym — but instead of waiting weeks to see a doctor, you get:</p>
+    <ul style="list-style-type: none;">
+      <li>✔️ Direct access to your provider</li>
+      <li>✔️ No co-pays or deductibles</li>
+      <li>✔️ More time to talk about your health</li>
+      <li>✔️ Peace of mind knowing you're supported</li>
+    </ul>
+  </section>
+
+  <section class="highlight2">
+    <h2>🌀 Why Membership?</h2>
+    <p style="text-align: left;">Think of it like a health gym — but instead of waiting weeks to see a doctor, you get:</p>
+    <ul style="list-style-type: none;">
+      <li style="  margin-bottom: 10px;">✔️ Direct access to your provider</li>
+      <li style="  margin-bottom: 10px;">✔️ No co-pays or deductibles</li>
+      <li style="  margin-bottom: 10px;">✔️ More time to talk about your health</li>
+      <li style="  margin-bottom: 10px;">✔️ Peace of mind knowing you're supported</li>
+    </ul>
+  </section>
+ </div>
+
+
+  <section class="highlight3">
+    <h2>🌿 Membership Rates (Ages 18–64)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Age Group</th>
+          <th>Monthly Fee</th>
+          <th>What's Included</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>18–29</td>
+          <td>$65/month</td>
+          <td>Ideal for young adults, fast care, and quick access when you need it.</td>
+        </tr>
+        <tr>
+          <td>30–49</td>
+          <td>$85/month</td>
+          <td>Great for managing work, life, and family health in one place.</td>
+        </tr>
+        <tr>
+          <td>50–64</td>
+          <td>$105/month</td>
+          <td>Perfect for managing chronic conditions, screenings, and wellness check-ins.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <p class="note" style="text-align: left;">✔️ Couples or family discounts available. Ask us about special rates.</p>
+
+
+  <section >
+    <h2>💊 Labs & Imaging: Covered or Cash — You Choose</h2>
+    <div class="flex">
+    <p style="text-align: left;">We can order labs, X-Rays and imaging. Use your insurance or ask about our discounted cash prices.</p>
+    <p style="text-align: left;">Use your insurance or ask about our discounted cash prices.</p>
     </div>
-  </footer>
+    
+  </section>
+
+  <section >
+    <h2 class="heart">❤️ What’s NOT Included:</h2>
+    <p style="text-align: left;">While your membership covers most of your primary care, some services (like medications, labs, or imaging done outside the clinic) may have a separate cost. But we’ll always talk about that with you first — no surprises.</p>
+  </section>
+
+</div>
+
 </body>
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <img src="healthy_highway_logo.png" alt="Logo" />
+      <p>© 2025 Healthy Highway. All rights reserved.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</footer>
 </html>
