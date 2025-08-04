@@ -136,24 +136,81 @@ nav a {
 .footer-links a:hover {
   text-decoration: underline;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: white;
+  position: relative;
+}
+
+
+
+.menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+
+
+
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    display: none;
+    padding: 20px;
+  }
+
+  #menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
   </style>
 </head>
 <body>
-    <header class="navbar">
-        <a class="logo" href="index.html"> 
-          <img src="healthy_highway_logo.png" alt="Healthy Highway Logo" />
-    
-        </a>
-        <nav>
-          <a href="index.html">HOME</a>
-          <a href="about.html">ABOUT</a>
-          <a href="service.html">SERVICES</a>
-          <a href="pricing.html">PRICING</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">CONTACT</a>
-          <a href="book.html" class="btn">BOOK APPOINTMENT</a>
-        </nav>
-      </header>
+  <header class="navbar">
+    <a class="logo" href="index.html">
+      <img src="healthy_highway_logo.png" alt="Healthy Highway Logo" />
+    </a>
+  
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+  
+    <nav class="menu">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="service.html">SERVICES</a>
+      <a href="pricing.html">PRICING</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="book.html" class="btn">BOOK APPOINTMENT</a>
+    </nav>
+  </header>
+  
   <header>
     <h1>OUR SERVICES</h1>
   </header>
@@ -173,7 +230,37 @@ nav a {
       <p>We come to you — offering high-quality care in the comfort of your home. Our approach combines evidence-based techniques with individualized treatment plans to promote healing, prevent infection, and reduce complications.</p>
     </section>
     <section class="card" id="same">
-        <h2>SAME-DAY SICK VISITS</h2>
+      <h2>CARE COORDINATION</h2>
+      <em>Keeping Your Health on Track — Without the Stress.</em>
+      <p>Managing your health can feel overwhelming — especially if you see multiple specialists, take different medications, or have chronic conditions. That’s where we step in.</p>
+      <p>Our Care Coordination service ensures all your healthcare providers are on the same page. We help you:</p>
+      <ul style="list-style: none; padding-left: 0; font-size: 15px; color: #333; margin-top: 16px;">
+        <li style="display: flex; align-items: center; margin-bottom: 12px;">
+          <span style="margin-right: 8px; font-size: 18px; line-height: 1;">✅</span>
+          <span style="line-height: 1.4;">Understand your treatment plans</span>
+        </li>
+        <li style="display: flex; align-items: center; margin-bottom: 12px;">
+          <span style="margin-right: 8px; font-size: 18px; line-height: 1;">✅</span>
+          <span style="line-height: 1.4;">Keep track of medications and refills</span>
+        </li>
+        <li style="display: flex; align-items: center; margin-bottom: 12px;">
+          <span style="margin-right: 8px; font-size: 18px; line-height: 1;">✅</span>
+          <span style="line-height: 1.4;">Coordinate lab work, imaging, and specialist referrals</span>
+        </li>
+        <li style="display: flex; align-items: center; margin-bottom: 12px;">
+          <span style="margin-right: 8px; font-size: 18px; line-height: 1;">✅</span>
+          <span style="line-height: 1.4;">Follow up on results and next steps
+           </span>
+        </li>
+        <li style="display: flex; align-items: center; margin-bottom: 12px;">
+          <span style="margin-right: 8px; font-size: 18px; line-height: 1;">✅</span>
+          <span style="line-height: 1.4;">Assist with transportation arrangements when needed
+           </span>
+        </li>
+      </ul>
+    </section>
+    <section class="card" id="same">
+        <h2>SAME DAY TELE-HEALTH VISIT</h2>
         <em>Quick, compassionate care when you need it most.</em>
         <p>Getting sick can be stressful — finding care shouldn't be. At Healthy Highways, we offer same-day sick visits to help you get the answers and relief you need, fast. Whether you’re dealing with a sore throat, cold, flu symptoms, stomach issues, a minor infection, or just not feeling like yourself, we make it easy to connect.</p>
         <p>You can choose a virtual visit or, when appropriate, an in-person evaluation. We’ll assess your symptoms, offer treatment options, send prescriptions to your pharmacy, and provide clear guidance so you know exactly what to do next. No waiting days for an appointment. No urgent care shuffle. Just timely, thoughtful care that works with your life.</p>

@@ -6,24 +6,81 @@
   <title>FAQ - Healthy Highways</title>
   <link rel="stylesheet" href="faq.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<style>
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: white;
+  position: relative;
+}
 
+
+
+.menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+
+
+
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    display: none;
+    padding: 20px;
+  }
+
+  #menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+</style>
 </head>
 <body>
-    <header class="navbar">
-        <a class="logo" href="index.html"> 
-          <img src="healthy_highway_logo.png" alt="Healthy Highway Logo" />
-    
-        </a>
-        <nav>
-            <a href="index.html">HOME</a>
-          <a href="about.html">ABOUT</a>
-          <a href="service.html">SERVICES</a>
-          <a href="pricing.html">PRICING</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">CONTACT</a>
-          <a href="book.html" class="btn">BOOK APPOINTMENT</a>
-        </nav>
-      </header>
+  <header class="navbar">
+    <a class="logo" href="index.html">
+      <img src="healthy_highway_logo.png" alt="Healthy Highway Logo" />
+    </a>
+  
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+  
+    <nav class="menu">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="service.html">SERVICES</a>
+      <a href="pricing.html">PRICING</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="book.html" class="btn">BOOK APPOINTMENT</a>
+    </nav>
+  </header>
 <section class="faq-page">
   <div class="container faq-layout">
 

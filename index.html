@@ -11,6 +11,59 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <style>
+    .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: white;
+  position: relative;
+}
+
+
+
+.menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+
+
+
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    display: none;
+    padding: 20px;
+  }
+
+  #menu-toggle:checked + .hamburger + .menu {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
   /*── Root & layout tokens ───────────────────────────────*/
   :root {
     --expect‑max‑w: 1240px;
@@ -112,11 +165,14 @@
   </style>
 <body>
   <header class="navbar">
-    <a class="logo" href="index.html"> 
+    <a class="logo" href="index.html">
       <img src="healthy_highway_logo.png" alt="Healthy Highway Logo" />
-
     </a>
-    <nav>
+  
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+  
+    <nav class="menu">
       <a href="index.html">HOME</a>
       <a href="about.html">ABOUT</a>
       <a href="service.html">SERVICES</a>
@@ -141,7 +197,8 @@
   <section class="sections">
     <a href="service.html#primary" class="section-card">PRIMARY CARE</a>
     <a  href="service.html#wound" class="section-card">WOUND CARE MANAGEMENT</a>
-    <a  href="service.html#same" class="section-card">SAME-DAY SICK VISIT</a>
+    <a  href="service.html#same" class="section-card">CARE COORDINATION</a>
+    <a  href="service.html#same" class="section-card">SAME DAY TELE-HEALTH VISIT</a>
   </section>
 
   <section class="expect-hh bg‑light">
